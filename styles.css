@@ -1,0 +1,118 @@
+:root {
+	--ButtonsX: 800px;
+	--ButtonsY: 60px;
+	--BGridL: 0px;
+	--BGridT: 0px;
+	--BGridH: 30px;
+	--BGridW: 30px;
+	--bColor: #000000;
+}
+
+#Body {
+	width: 90%;
+	height: 90%;
+	background-color: var(--bColor);
+	color: #ffffff;
+}
+
+#DI {
+	position: relative;
+	left: 60px;
+}
+
+#SaveName {
+	background-color: #404040;
+	color: #ffffff;
+}
+
+#DOut {
+	position: relative;
+	left: 60px;
+}
+
+#SetD0 {
+	position: relative;
+	left: 20px;
+	background-color: #404040;
+	color: #ffffff;
+}
+
+#SetD1 {
+	position: relative;
+	left: 20px;
+	background-color: #404040;
+	color: #ffffff;
+}
+
+#SetD2 {
+	position: relative;
+	left: 20px;
+	background-color: #404040;
+	color: #ffffff;
+}
+
+#SetD3 {
+	position: relative;
+	left: 20px;
+	background-color: #404040;
+	color: #ffffff;
+}
+
+#BoardControl {
+	position: relative;
+	left: 60px;
+	height: 640px;
+	width: 640px;
+	top: 20px;
+	border-color: #606060;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #000000;
+}
+
+#GridHome {
+	visibility: hidden;
+}
+
+#Buttons {
+	position: absolute;
+	left: var(--ButtonsX,800 px);
+	top: var(--ButtonsY,60px);
+}
+
+#Back {
+	position: relative;
+	height: var(--BGridH);
+	width: calc(var(--BGridW)*3);
+	background-color: #404040;
+	color: #ffffff;
+}
+
+.ButtonGrid {
+	position: relative;
+	top: var(--BGridT);
+	left: var(--BGridL);
+	height: var(--BGridH);
+	width: var(--BGridW);
+	background-color: #404040;
+	color: #ffffff;
+}
+
+.Button {
+	background-color: #404040;
+	color: #ffffff;
+}
+
+.Selector {
+	background-color: #404040;
+	color: #ffffff;
+}
+
+.TextBox {
+	position: relative;
+	width: 320px;
+	left: 10px;
+	background-color: #404040;
+	color: #ffffff;
+}
+

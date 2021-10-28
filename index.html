@@ -1,0 +1,71 @@
+<html lang="en">
+	<head>
+		<title>Solar Wars Strategy</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+	</head>
+	<body id = "Body">
+		<header>
+			<h3>Solar Wars Strategy</h3>
+		</header>
+		<div id="DI">
+			<div id = "P0">Player 0: <input type="text" id="P0dIn" class="TextBox"/> <button type="button" id="SetD0">Set P0</button></div>
+			<div id = "P1">Player 1: <input type="text" id="P1dIn" class="TextBox"/> <button type="button" id="SetD1">Set P1</button></div>
+			<div id = "P2">Player 2: <input type="text" id="P2dIn" class="TextBox"/> <button type="button" id="SetD2">Set P2</button></div>
+			<div id = "P3">Player 3: <input type="text" id="P3dIn" class="TextBox"/> <button type="button" id="SetD3">Set P3</button></div>
+			<button type="button" id="MenuButton" class="button">Menu v</button>
+			<div id="MenuOptions">
+			<br />
+			Player:
+				<select id="Player" class="Selector">
+				  <option value=0>0</option>
+				  <option value=1>1</option>	
+				  <option value=2>2</option>
+				  <option value=3>3</option>
+				  <option value=4>Spectator</option>
+				</select>
+				Player Count:
+				<select id="PlayCo" class="Selector">
+				  <option value=2>2</option>
+				  <option value=3>3</option>
+				  <option value=4>4</option>
+				</select>
+				 Faction:
+				<select id="Faction" class="Selector"></select>
+				 Movement Style:
+				 <select id="MovStyl:" class="Selector">
+					<option value =0>Momentum</option>
+					<option value =1>Naval</option>
+				 </select>
+				 <br />
+				 <br />
+				 Saves:
+				 <select id="Saves" class="Selector"></select>
+				 <button type="button" class="button" id="LoadGame">Load Save</button>
+				 <button type="button" class="button" id="DelSave">Delete Save</button>
+				 <input type="text" id="SaveName" placeholder = "Name of File"/>
+				 <button type="button" class="button" id="SaveGame">Save this Game</button>
+			 </div>
+		</div>
+		<br />
+		<div id = "DOut"><button type = "button" class="button" id="CopyText">Copy String:</button><input type="text" id="OutBox" class="TextBox" readonly></input></div>
+		<canvas id = "BoardControl" width = "640" height = "640"></canvas>
+		<div id = "Buttons">
+		<div id = "B123"><button type="button" class="ButtonGrid" id="b1">🡤</button><button type="button" class="ButtonGrid" id="b2">🡡</button><button type="button" class="ButtonGrid" id="b3">🡥</button></div>
+		<div id = "B456"><button type="button" class="ButtonGrid" id="b4">🡠</button><button type="button" class="ButtonGrid" id="b5">●</button><button type="button" class="ButtonGrid" id="b6">🡢</button></div>
+		<div id = "B789"><button type="button" class="ButtonGrid" id="b7">🡧</button><button type="button" class="ButtonGrid" id="b8">🡣</button><button type="button" class="ButtonGrid" id="b9">🡦</button></div>
+		<button type="button" id="Back"> Back </button>
+		<p id = "Info"></p>
+		</div>
+		<canvas id = "GridHome" width = "640" height = "640"></canvas>
+		<audio id="press" src="music/press.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+		<audio id="move" src="music/mov.wav" type="audio/wav"></audio>
+		<audio id="back" src="music/back.wav" type="audio/wav"></audio>
+		<script src="js/shiptypes.js"></script>
+		<script src="js/jQuery.js"></script>
+		<script src="js/control.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/board.js"></script>
+		<script src="js/defs.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
